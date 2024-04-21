@@ -22,6 +22,7 @@
   right: 0;
   width: 100%;
   box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  z-index: 99;
 }
 
 .topnav .brand {

@@ -1,7 +1,7 @@
 import type { IMovie } from "~/types/IMovie";
 import type { IMovieStore } from "~/types/IMovieStore";
 
-enum MUTATIONS {
+export enum MUTATIONS {
     SET_MOVIE_LIST= 'SET_MOVIE_LIST',
 }
 
