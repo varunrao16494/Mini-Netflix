@@ -1,0 +1,65 @@
+$primary-color: #2196F3;
+$secondary-color: #272727;
+$light-color: #ffffff;
+$dark-color: #000;
+
+@mixin flex-display($horizontal, $vertical) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+.center{
+    @include flex-display(center,center)
+  }
+
+.end{
+  @include flex-display(flex-end,center)
+}
+
+.text-primary{
+    color: $primary-color;
+}
+
+.bg-primary{
+    background-color: $primary-color;
+}
+
+.text-light {
+    color: $light-color;
+}
+
+.bg-light {
+    background-color: $light-color;
+}
+.text-center{
+    text-align: center;
+}
+
+button{
+    background: $light-color;
+    color: $primary-color;
+    padding: 8px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    margin: 20px 0;
+  }
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}

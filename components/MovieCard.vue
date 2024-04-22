@@ -82,7 +82,7 @@
 }
 
 .ticket__current-price {
-	color: #69c982;
+	color: #2196F3;
 	font-size: 1.4rem;
 	font-weight: bold;
 }

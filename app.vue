@@ -13,14 +13,3 @@ console.log(runtimeConfig.public);
 config.baseUrl = runtimeConfig.public.apiBase;
 config.apiKey = runtimeConfig.public.apiSecret;
 </script>
-
-<style>
-    .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .text-center{
-        text-align: center;
-    }
-</style>

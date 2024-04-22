@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  css: ["~/assets/style.scss"],
   runtimeConfig: {
     // The private keys which are only available server-side
     prodApiSecret: 'ac8624fd',
@@ -9,5 +10,6 @@ export default defineNuxtConfig({
       apiBase: 'https://www.omdbapi.com/',
       apiSecret: 'ac8624fd',
     }
-  }
+  },
+  ssr: false,
 })
