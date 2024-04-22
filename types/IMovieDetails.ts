@@ -12,5 +12,10 @@ export interface IMovieDetails {
     Language: String,
     Country: String,
     Awards: String,
-    Poster:String,
+    Poster: String,
+    Ratings: Record<string, string>[],
+    imdbRating: string,
+    imdbVotes: string,
+    imdbID: string,
+    BoxOffice: string,
 }

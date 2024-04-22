@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="topnav">
-        <NuxtLink class="brand" to="/">Mini Netflix</NuxtLink>
+      <NuxtLink class="brand" to="/">Mini Netflix</NuxtLink>
     </nav>
   </header>
 </template>
@@ -15,7 +15,8 @@
   left: 0;
   right: 0;
   width: 100%;
-  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
   z-index: 99;
 }
 
@@ -26,6 +27,6 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  color: #2196F3;
+  color: #2196f3;
 }
 </style>

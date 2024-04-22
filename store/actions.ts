@@ -14,10 +14,9 @@ const actions = {
             commit(MUTATIONS.SET_MOVIE_LIST, movies.Search);
         }
     }, 
-    async [ACTIONS.FETCH_MOVIE_DETAILS]({ commit, state }:any, imdbID: string): Promise<IMovieDetails> {
-        const movieDetails = state.movieDetails.find((m: any) => m.imdbID === imdbID);
+    async [ACTIONS.FETCH_MOVIE_DETAILS]({ commit, state }:any, imdbID: string) {
+        const movieDetails = state.movieDetails[imdbID];
         if (movieDetails) {
-            console.log('moviessssssssssss', movieDetails)
             return movieDetails;
         } else {
             const movies:any = await $fetch(`${config.baseUrl}?i=${imdbID}&page=1&apikey=${config.apiKey}`);

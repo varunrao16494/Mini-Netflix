@@ -19,6 +19,6 @@
 .footer-section p {
   display: block;
   font-size: 17px;
-  color: #2196F3;
+  color: #2196f3;
 }
 </style>
